@@ -12,3 +12,4 @@ dbt-bigquery==1.4.2
 pytest==7.1.2
 gcsfs
 python-dotenv
+griffe==0.36.0

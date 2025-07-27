@@ -3,38 +3,40 @@ locals {
 }
 
 variable "project" {
-  default = "central-archery-404819"
-  type = string
+  default = "covid-19-etl-4040"
+  type    = string
 }
 
 variable "region" {
   description = "Region for GCP resources"
-  type = string
+  type        = string
+  default     = "asia-south1"
 }
 
 variable "storage_class" {
   description = "Storage class type for your bucket"
-  default = "STANDARD"
+  default     = "STANDARD"
 }
 
 variable "BQ_DATASET" {
   description = "BigQuery Dataset that raw data (from GCS) will be written to"
-  type = string
-  default = "covid19"
+  type        = string
+  default     = "covid19"
 }
 
 variable "instance" {
-  type = string
+  type    = string
   default = "covid19_vm"
 }
 
 variable "machine_type" {
-  type = string
+  type    = string
   default = "n1-standard-1"
 }
 
 variable "zone" {
   description = "Region for VM"
-  type = string
-  default = "europe-west2-a"
+  type        = string
+  default     = "asia-south1-a"
 }
+
