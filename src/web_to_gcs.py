@@ -134,7 +134,7 @@ def web_to_gcs() -> None:
     df_clean = clean(df)
     path = write_local(df_clean, dataset_file)
     test_dataframe_schema(path)
-    # write_gcs(path)
+    write_gcs(path)
 
 
 if __name__ == "__main__":
